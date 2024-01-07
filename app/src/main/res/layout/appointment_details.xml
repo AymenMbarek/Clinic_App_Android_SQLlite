@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b1dafa"
+    tools:context=".AppointmentDetails">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:shadowColor="#000000"
+        android:text="@string/appointment_welcome_en"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:background="@drawable/textview_smooth_edges"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_marginHorizontal="20dp">
+
+
+            <!--===================Title===========================-->
+            <TextView
+                android:id="@+id/det_typeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#375c91"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_type_en" />
+
+            <TextView
+                android:id="@+id/def_typeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+
+            <!--===================Doctor===========================-->
+            <TextView
+                android:id="@+id/def_doctorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#375c91"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_doctor_en" />
+
+            <TextView
+                android:id="@+id/def_doctorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+            <!--===================Patient===========================-->
+            <TextView
+                android:id="@+id/def_patientTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#375c91"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_patient_en" />
+
+            <TextView
+                android:id="@+id/def_patientText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+
+            <!--===================Date===========================-->
+            <TextView
+                android:id="@+id/def_dateTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#375c91"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_date_en" />
+
+            <TextView
+                android:id="@+id/def_dateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+
+            <!--===================Hour===========================-->
+            <TextView
+                android:id="@+id/def_hourTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#375c91"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_Hour_en" />
+
+            <TextView
+                android:id="@+id/def_hourText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+            <!--===================Contact===========================-->
+            <TextView
+                android:id="@+id/def_emailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#375c91"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_email_en" />
+
+            <TextView
+                android:id="@+id/def_emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+            <!--===================Notes===========================-->
+            <TextView
+                android:id="@+id/def_notesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#375c91"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appointment_notes_en" />
+
+            <TextView
+                android:id="@+id/def_notesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:background="@drawable/appointment_view"
+                android:textAlignment="center"
+                android:text="TextView" />
+
+
+            <!--=======================Buttons===========================-->
+            <Button
+                android:id="@+id/det_reportButton"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/white"
+                android:background="#375c91"
+                android:text="@string/appointment_report_button_en"/>
+
+            <Button
+                android:id="@+id/det_cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:background="#375c91"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_cancel_button_en"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
